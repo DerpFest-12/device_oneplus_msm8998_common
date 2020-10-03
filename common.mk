@@ -150,6 +150,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
 
+# Device Settings
+PRODUCT_PACKAGES += \
+    DeviceSettings
+
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@2.0-impl:64 \
@@ -245,6 +249,10 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.radio.sh \
     ueventd.qcom.rc
+
+# Init
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/init.target.devicesettings.rc:$(TARGET_COPY_OUT_VENDOR)/init.target.devicesettings.rc
 
 # IFAA (Fingerprint support for Alipay)
 PRODUCT_PACKAGES += \
