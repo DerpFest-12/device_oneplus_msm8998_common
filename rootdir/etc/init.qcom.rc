@@ -364,6 +364,9 @@ on boot
     chown system system /sys/kernel/fast_charge/force_fast_charge
     chmod 0664 /sys/kernel/fast_charge/force_fast_charge
 
+    start vendor.qcrild
+    start vendor.qcrild2
+
 on charger
     start vendor.dashd
     start vendor.power_off_alarm
@@ -587,12 +590,6 @@ service vendor.qseecomd /vendor/bin/qseecomd
     user root
     group root
     task_profiles ServiceCapacityLow
-
-service vendor.ril-daemon2 /vendor/bin/hw/rild -c 2
-    class main
-    user radio
-    group radio cache inet misc audio log readproc wakelock oem_2901
-    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
 
 service vendor.rmt_storage /vendor/bin/rmt_storage
     class core
