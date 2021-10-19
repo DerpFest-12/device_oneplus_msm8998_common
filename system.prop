@@ -56,6 +56,7 @@ rild.libpath=/vendor/lib64/libril-qc-hal-qmi.so
 keyguard.no_require_sim=true
 persist.radio.multisim.config=dsds
 persist.vendor.radio.atfwd.start=true
+persist.vendor.radio.msimmode=dsds
 ril.subscription.types=NV,RUIM
 ro.telephony.call_ring.multiple=false
 ro.telephony.default_network=22,20
