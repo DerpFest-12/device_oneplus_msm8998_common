@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2014-2017 The OmniROM Project
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+          http://www.apache.org/licenses/LICENSE-2.0
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<resources>
+    <string name="device_title">OnePlus Settings</string>
+    <string name="device_summary">Regola le impostazioni specifiche del dispositivo OnePlus</string>
+
+    <!-- Display modes -->
+    <string name="display_title">Modalità display</string>
+    <string name="display_summary">Regola impostazioni e preferenze per il display</string>
+    <string name="dc_mode_summary"></string>
+    <string name="dc_mode_title">DC-Dimming</string>
+    <string name="tile_dc_mode">DC-Dimming</string>
+
+    <!-- Screen off Gestures : Input -->
+    <string name="screen_gestures_panel_title">Gesti schermo</string>
+    <string name="touchscreen_gesture_settings_title">Gesti schermo</string>
+    <string name="touchscreen_gesture_settings_summary">Esegui vari gesti sullo schermo per azioni veloci</string>
+    <string name="touchscreen_gestures_haptic_feedback_title">Feedback aptico</string>
+    <string name="touchscreen_gestures_haptic_feedback_summary">Vibra quando è rilevato un gesto sullo schermo</string>
+    <string name="touchscreen_gesture_two_finger_down_swipe_title">Scorri in basso con due dita</string>
+    <string name="touchscreen_gesture_one_finger_up_swipe_title">Scorri in alto con un dito</string>
+    <string name="touchscreen_gesture_one_finger_up_swipe_home_title">Scorri in alto dal pulsante home</string>
+    <string name="touchscreen_gesture_one_finger_down_swipe_title">Scorri in basso con un dito</string>
+    <string name="touchscreen_gesture_one_finger_left_swipe_title">Scorri a sinistra con un dito</string>
+    <string name="touchscreen_gesture_one_finger_right_swipe_title">Scorri a destra con un dito</string>
+    <string name="touchscreen_gesture_up_arrow_title">Disegna una \"Λ\"</string>
+    <string name="touchscreen_gesture_down_arrow_title">Disegna una \"V\"</string>
+    <string name="touchscreen_gesture_left_arrow_title">Disegna una \"&lt;\"</string>
+    <string name="touchscreen_gesture_right_arrow_title">Disegna una \"&gt;\"</string>
+    <string name="touchscreen_gesture_letter_o_title">Disegna la lettera \"O\"</string>
+    <string name="touchscreen_gesture_letter_m_title">Disegna la lettera \"M\"</string>
+    <string name="touchscreen_gesture_letter_s_title">Disegna la lettera \"S\"</string>
+    <string name="touchscreen_gesture_letter_w_title">Disegna la lettera \"W\"</string>
+    <!-- Screen off Gestures : Actions -->
+    <string name="touchscreen_gesture_action_dialog_title">Azione gesto</string>
+    <string name="touchscreen_gesture_action_do_nothing">Non fare niente</string>
+    <string name="touchscreen_gesture_action_flashlight">Dttiva/disattiva torcia</string>
+    <string name="touchscreen_gesture_action_camera">Apri la fotocamera</string>
+    <string name="touchscreen_gesture_action_browser">Apri il browser</string>
+    <string name="touchscreen_gesture_action_dialer">Apri il tastierino telefonico</string>
+    <string name="touchscreen_gesture_action_email">Vedi le tue email</string>
+    <string name="touchscreen_gesture_action_messages">Vedi i tuoi messaggi</string>
+    <string name="touchscreen_gesture_action_play_pause_music">Riproduci/pausa musica</string>
+    <string name="touchscreen_gesture_action_previous_track">Riproduci traccia musicale precedente</string>
+    <string name="touchscreen_gesture_action_next_track">Riproduci traccia musicale successiva</string>
+    <string name="touchscreen_gesture_action_volume_down">Abbassa volume multimediale</string>
+    <string name="touchscreen_gesture_action_volume_up">Aumenta volume multimediale</string>
+    <string name="touchscreen_gesture_action_ambient_display">Mostra ambient display</string>
+
+    <!-- Notification slider -->
+    <string name="notification_slider_category_title">Slider notifiche</string>
+    <string name="notification_slider_selection_dialog_title">Azione</string>
+    <string name="notification_slider_top_position">Posizione superiore</string>
+    <string name="notification_slider_middle_position">Posizione centrale</string>
+    <string name="notification_slider_bottom_position">Posizione inferiore</string>
+    <string name="notification_slider_mode_total_silence">Silenzio totale</string>
+    <string name="notification_slider_mode_alarms_only">Solo sveglie</string>
+    <string name="notification_slider_mode_priority_only">Solo priorità</string>
+    <string name="notification_slider_mode_silent">Silenzioso</string>
+    <string name="notification_slider_mode_vibrate">Vibrazione</string>
+    <string name="notification_slider_mode_none">Normale</string>
+    <string name="buttons_dashboard_summary">Impostazioni alert slider</string>
+
+    <!-- Button settings  -->
+    <string name="button_dashboard_summary">Pulsanti</string>
+    <string name="button_swap_title">Scambia pulsanti</string>
+    <string name="button_swap_summary">Scambia l\'ordine dei pulsanti recenti e indietro</string>
+
+    <!-- Vibration control -->
+    <string name="category_vibrator">Vibrazione</string>
+    <string name="vib_strength_title_head">Intensità</string>
+    <string name="vib_strength_summary_head">Definisci la potenza della vibrazione</string>
+    <string name="vibration_warning">Impostare la potenza troppo alta potrebbe causare danni hardware permamenti</string>
+
+    <!-- FPS info -->
+    <string name="fps_title">FPS misurati</string>
+    <string name="fps_info_title">FPS overlay</string>
+    <string name="fps_info_summary">Mostra overlay con i frame per secondo correnti</string>
+
+    <!-- Log Tile -->
+    <string name="quick_settings_log_tile_label">LogTile</string>
+    <string name="quick_settings_log_tile_dialog_title">Opzioni</string>
+    <string name="cannot_get_su">Azione fallita a causa di accesso superuser mancante</string>
+</resources>
