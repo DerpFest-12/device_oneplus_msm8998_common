@@ -387,6 +387,10 @@ TARGET_SUPPORTS_QUICK_TAP := true
 PRODUCT_PACKAGES += \
     librecovery_updater_oneplus
 
+# Remove packages
+PRODUCT_PACKAGES += \
+    RemovePackages
+
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.5.vendor \
