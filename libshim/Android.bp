@@ -1,0 +1,7 @@
+cc_library_shared {
+    name: "libshim_imsvt",
+    srcs: ["lib_imsvt.cpp"],
+    compile_multilib: "both",
+    system_ext_specific: true,
+}
+
