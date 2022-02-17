@@ -350,9 +350,6 @@ on boot
     chown system system /proc/tri-state-key/keyCode_bottom
     chmod 0660 /proc/tri-state-key/keyCode_bottom
 
-    start vendor.qcrild
-    start vendor.qcrild2
-
     # Vibrator permissions
     chown system system /sys/class/leds/vibrator/vmax_mv
     chmod 0660 /sys/class/leds/vibrator/vmax_mv
@@ -585,6 +582,12 @@ service vendor.qseecomd /vendor/bin/qseecomd
     user root
     group root
     task_profiles ServiceCapacityLow
+
+service vendor.ril-daemon2 /vendor/bin/hw/rild -c 2
+    class main
+    user radio
+    group radio cache inet misc audio sdcard_r sdcard_rw diag oem_2901 log
+    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
 
 service vendor.rmt_storage /vendor/bin/rmt_storage
     class core
