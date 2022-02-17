@@ -82,11 +82,6 @@ function blob_fixup() {
         vendor/etc/permissions/com.fingerprints.extension.xml )
             sed -i "s|/system/framework/|/vendor/framework/|g" "${2}"
             ;;
-        system_ext/lib64/lib-imsvideocodec.so )
-            for LIBDPM_SHIM in $(grep -L "libshim_imsvt.so" "${2}"); do
-                "${PATCHELF}" --add-needed "libshim_imsvt.so" "$LIBDPM_SHIM"
-            done
-            ;;
     esac
 }
 
