@@ -87,7 +87,7 @@
     </string-array>
 
     <!-- Defines the custom pickup sensor used by various OEMs like OnePlus-->
-    <string name="config_dozePickupSensorType">com.oneplus.sensor.pickup</string>
+    <string name="config_dozePickupSensorType">android.sensor.tilt_detector</string>
 
     <!-- The location of the devices physical tri state switch
          0: Left side
