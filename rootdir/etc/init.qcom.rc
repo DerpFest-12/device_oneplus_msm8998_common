@@ -360,7 +360,7 @@ on boot
     chmod 0664 /sys/kernel/fast_charge/force_fast_charge
 
 on charger
-    start dashd
+    start vendor.dashd
     start vendor.power_off_alarm
     setprop sys.usb.configfs 1
 
@@ -446,13 +446,6 @@ service charger /system/bin/charger
     capabilities SYS_BOOT
     seclabel u:r:charger:s0
 
-service dashd /vendor/xbin/dashd
-     class core
-     critical
-     seclabel u:r:dashd:s0
-     group root system
-     task_profiles ServiceCapacityLow
-
 service init-devstart-sh /vendor/bin/init.devstart.sh
     class core
     user root
@@ -494,6 +487,12 @@ service vendor.cnss-daemon /vendor/bin/cnss-daemon -n -l
     group system inet net_admin wifi
     capabilities NET_ADMIN
     task_profiles ServiceCapacityLow
+
+service vendor.dashd /vendor/bin/dashd
+     class core
+     critical
+     group root system
+     task_profiles ServiceCapacityLow
 
 service vendor.init-radio-sh /vendor/bin/init.radio.sh
     class late_start
