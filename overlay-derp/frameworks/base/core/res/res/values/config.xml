@@ -85,9 +85,6 @@
         <item>com.derp.device.DeviceSettings.TouchKeyHandler</item>
     </string-array>
 
-    <!-- Defines the custom pickup sensor used by various OEMs like OnePlus-->
-    <string name="config_dozePickupSensorType">android.sensor.tilt_detector</string>
-
     <!-- The location of the devices physical tri state switch
          0: Left side
          1: Right side -->
